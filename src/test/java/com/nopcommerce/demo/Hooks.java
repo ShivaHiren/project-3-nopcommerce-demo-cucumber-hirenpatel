@@ -3,8 +3,8 @@ import com.cucumber.listener.Reporter;
 import com.nopcommerce.demo.propertyreader.PropertyReader;
 import com.nopcommerce.demo.utility.Utility;
 import cucumber.api.Scenario;
-import org.junit.After;
-import org.junit.Before;
+import cucumber.api.java.After;
+import cucumber.api.java.Before;
 
 import java.io.IOException;
 
