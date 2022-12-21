@@ -6,6 +6,10 @@ formatter.feature({
   "id": "computer-test",
   "keyword": "Feature"
 });
+formatter.before({
+  "duration": 5874433100,
+  "status": "passed"
+});
 formatter.scenario({
   "line": 5,
   "name": "verify User Should Navigate To Computer Page Successfully",
@@ -43,22 +47,30 @@ formatter.match({
   "location": "LoginStepsTest.iAmOnHomepage()"
 });
 formatter.result({
-  "duration": 131334200,
+  "duration": 130759400,
   "status": "passed"
 });
 formatter.match({
   "location": "ComputerStepTest.iClickOnComputerTab()"
 });
 formatter.result({
-  "duration": 79504900,
-  "error_message": "java.lang.NullPointerException\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElements(DefaultElementLocator.java:87)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:37)\r\n\tat com.sun.proxy.$Proxy20.iterator(Unknown Source)\r\n\tat com.nopcommerce.demo.pages.HomePage.clickOnMenuTab(HomePage.java:88)\r\n\tat com.nopcommerce.demo.steps.ComputerStepTest.iClickOnComputerTab(ComputerStepTest.java:14)\r\n\tat ✽.When I click on Computer tab(ComputerTest.feature:7)\r\n",
-  "status": "failed"
+  "duration": 1078848300,
+  "status": "passed"
 });
 formatter.match({
   "location": "ComputerStepTest.iShouldNavigateToComputerPageSuccessfully()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 47379600,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 80000,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 2518634600,
+  "status": "passed"
 });
 formatter.scenario({
   "line": 11,
@@ -102,28 +114,33 @@ formatter.match({
   "location": "LoginStepsTest.iAmOnHomepage()"
 });
 formatter.result({
-  "duration": 46000,
+  "duration": 33700,
   "status": "passed"
 });
 formatter.match({
   "location": "ComputerStepTest.iClickOnComputerTab()"
 });
 formatter.result({
-  "duration": 6109800,
-  "error_message": "java.lang.NullPointerException\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElements(DefaultElementLocator.java:87)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:37)\r\n\tat com.sun.proxy.$Proxy20.iterator(Unknown Source)\r\n\tat com.nopcommerce.demo.pages.HomePage.clickOnMenuTab(HomePage.java:88)\r\n\tat com.nopcommerce.demo.steps.ComputerStepTest.iClickOnComputerTab(ComputerStepTest.java:14)\r\n\tat ✽.When I click on Computer tab(ComputerTest.feature:13)\r\n",
-  "status": "failed"
+  "duration": 983713600,
+  "status": "passed"
 });
 formatter.match({
   "location": "ComputerStepTest.iClickOnDesktopsLink()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 424571100,
+  "status": "passed"
 });
 formatter.match({
   "location": "ComputerStepTest.iShouldNavigateToDesktopsPageSuccessfully()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 43076600,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 37500,
+  "status": "passed"
 });
 formatter.scenarioOutline({
   "line": 18,
@@ -214,38 +231,20 @@ formatter.examples({
     {
       "cells": [
         "2.2 GHz Intel Pentium Dual-Core E2200",
-        "2 GB",
-        "320 GB",
-        "Vista Home [+$50.00]",
+        "8GB [+$60.00]",
+        "400 GB [+$100.00]",
+        "Vista Premium [+$60.00]",
         "Microsoft Office [+$50.00]"
       ],
       "line": 33,
       "id": "computer-test;verify-that-user-should-build-your-own-computer-and-add-them-to-cart-successfully;;2"
-    },
-    {
-      "cells": [
-        "2.5 GHz Intel Pentium Dual-Core E2200 [+$15.00]",
-        "4GB [+$20.00]",
-        "400 GB [+$100.00]",
-        "Vista Premium [+$60.00]",
-        "Acrobat Reader [+$10.00]"
-      ],
-      "line": 34,
-      "id": "computer-test;verify-that-user-should-build-your-own-computer-and-add-them-to-cart-successfully;;3"
-    },
-    {
-      "cells": [
-        "2.5 GHz Intel Pentium Dual-Core E2200 [+$15.00]",
-        "8GB [+$60.00]",
-        "320 GB",
-        "VistaHome [+$50.00]",
-        "Total Commander [+$5.00]"
-      ],
-      "line": 35,
-      "id": "computer-test;verify-that-user-should-build-your-own-computer-and-add-them-to-cart-successfully;;4"
     }
   ],
   "keyword": "Examples"
+});
+formatter.before({
+  "duration": 2604568400,
+  "status": "passed"
 });
 formatter.scenario({
   "line": 33,
@@ -291,7 +290,7 @@ formatter.step({
 });
 formatter.step({
   "line": 24,
-  "name": "I select ram \"2 GB\"",
+  "name": "I select ram \"8GB [+$60.00]\"",
   "matchedColumns": [
     1
   ],
@@ -299,7 +298,7 @@ formatter.step({
 });
 formatter.step({
   "line": 25,
-  "name": "I select hdd \"320 GB\"",
+  "name": "I select hdd \"400 GB [+$100.00]\"",
   "matchedColumns": [
     2
   ],
@@ -307,7 +306,7 @@ formatter.step({
 });
 formatter.step({
   "line": 26,
-  "name": "I select OS \"Vista Home [+$50.00]\"",
+  "name": "I select OS \"Vista Premium [+$60.00]\"",
   "matchedColumns": [
     3
   ],
@@ -335,28 +334,29 @@ formatter.match({
   "location": "LoginStepsTest.iAmOnHomepage()"
 });
 formatter.result({
-  "duration": 40000,
+  "duration": 51500,
   "status": "passed"
 });
 formatter.match({
   "location": "ComputerStepTest.iClickOnComputerTab()"
 });
 formatter.result({
-  "duration": 6082800,
-  "error_message": "java.lang.NullPointerException\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElements(DefaultElementLocator.java:87)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:37)\r\n\tat com.sun.proxy.$Proxy20.iterator(Unknown Source)\r\n\tat com.nopcommerce.demo.pages.HomePage.clickOnMenuTab(HomePage.java:88)\r\n\tat com.nopcommerce.demo.steps.ComputerStepTest.iClickOnComputerTab(ComputerStepTest.java:14)\r\n\tat ✽.When I click on Computer tab(ComputerTest.feature:20)\r\n",
-  "status": "failed"
+  "duration": 508764500,
+  "status": "passed"
 });
 formatter.match({
   "location": "ComputerStepTest.iClickOnDesktopsLink()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 421162200,
+  "status": "passed"
 });
 formatter.match({
   "location": "RegisterStepsTest.iClickOnProductNameBuildYourOwnComputer()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 784416400,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -368,373 +368,8 @@ formatter.match({
   "location": "ComputerStepTest.iSelectProcessor(String)"
 });
 formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "2 GB",
-      "offset": 14
-    }
-  ],
-  "location": "ComputerStepTest.iSelectRam(String)"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "320 GB",
-      "offset": 14
-    }
-  ],
-  "location": "ComputerStepTest.iSelectHdd(String)"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Vista Home [+$50.00]",
-      "offset": 13
-    }
-  ],
-  "location": "ComputerStepTest.iSelectOS(String)"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Microsoft Office [+$50.00]",
-      "offset": 19
-    }
-  ],
-  "location": "ComputerStepTest.iSelectSoftware(String)"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "ComputerStepTest.iClickOnAddToCartButton()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "ComputerStepTest.iShouldSeeProductHasBeenAddedToYourShoppingCartConfirmationMessage()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.scenario({
-  "line": 34,
-  "name": "verify That User Should Build Your Own Computer And Add Them To Cart Successfully",
-  "description": "",
-  "id": "computer-test;verify-that-user-should-build-your-own-computer-and-add-them-to-cart-successfully;;3",
-  "type": "scenario",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "line": 17,
-      "name": "@regression"
-    }
-  ]
-});
-formatter.step({
-  "line": 19,
-  "name": "I am on homepage",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 20,
-  "name": "I click on Computer tab",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 21,
-  "name": "I click on Desktops link",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 22,
-  "name": "I click on product name Build your own computer",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 23,
-  "name": "I select processor \"2.5 GHz Intel Pentium Dual-Core E2200 [+$15.00]\"",
-  "matchedColumns": [
-    0
-  ],
-  "keyword": "And "
-});
-formatter.step({
-  "line": 24,
-  "name": "I select ram \"4GB [+$20.00]\"",
-  "matchedColumns": [
-    1
-  ],
-  "keyword": "And "
-});
-formatter.step({
-  "line": 25,
-  "name": "I select hdd \"400 GB [+$100.00]\"",
-  "matchedColumns": [
-    2
-  ],
-  "keyword": "And "
-});
-formatter.step({
-  "line": 26,
-  "name": "I select OS \"Vista Premium [+$60.00]\"",
-  "matchedColumns": [
-    3
-  ],
-  "keyword": "And "
-});
-formatter.step({
-  "line": 27,
-  "name": "I select Software \"Acrobat Reader [+$10.00]\"",
-  "matchedColumns": [
-    4
-  ],
-  "keyword": "And "
-});
-formatter.step({
-  "line": 28,
-  "name": "I click on add to cart button",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 29,
-  "name": "I should see product has been added to your shopping cart confirmation message",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "LoginStepsTest.iAmOnHomepage()"
-});
-formatter.result({
-  "duration": 67600,
+  "duration": 105029100,
   "status": "passed"
-});
-formatter.match({
-  "location": "ComputerStepTest.iClickOnComputerTab()"
-});
-formatter.result({
-  "duration": 6489700,
-  "error_message": "java.lang.NullPointerException\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElements(DefaultElementLocator.java:87)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:37)\r\n\tat com.sun.proxy.$Proxy20.iterator(Unknown Source)\r\n\tat com.nopcommerce.demo.pages.HomePage.clickOnMenuTab(HomePage.java:88)\r\n\tat com.nopcommerce.demo.steps.ComputerStepTest.iClickOnComputerTab(ComputerStepTest.java:14)\r\n\tat ✽.When I click on Computer tab(ComputerTest.feature:20)\r\n",
-  "status": "failed"
-});
-formatter.match({
-  "location": "ComputerStepTest.iClickOnDesktopsLink()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "RegisterStepsTest.iClickOnProductNameBuildYourOwnComputer()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "2.5 GHz Intel Pentium Dual-Core E2200 [+$15.00]",
-      "offset": 20
-    }
-  ],
-  "location": "ComputerStepTest.iSelectProcessor(String)"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "4GB [+$20.00]",
-      "offset": 14
-    }
-  ],
-  "location": "ComputerStepTest.iSelectRam(String)"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "400 GB [+$100.00]",
-      "offset": 14
-    }
-  ],
-  "location": "ComputerStepTest.iSelectHdd(String)"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Vista Premium [+$60.00]",
-      "offset": 13
-    }
-  ],
-  "location": "ComputerStepTest.iSelectOS(String)"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Acrobat Reader [+$10.00]",
-      "offset": 19
-    }
-  ],
-  "location": "ComputerStepTest.iSelectSoftware(String)"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "ComputerStepTest.iClickOnAddToCartButton()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "ComputerStepTest.iShouldSeeProductHasBeenAddedToYourShoppingCartConfirmationMessage()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.scenario({
-  "line": 35,
-  "name": "verify That User Should Build Your Own Computer And Add Them To Cart Successfully",
-  "description": "",
-  "id": "computer-test;verify-that-user-should-build-your-own-computer-and-add-them-to-cart-successfully;;4",
-  "type": "scenario",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "line": 17,
-      "name": "@regression"
-    }
-  ]
-});
-formatter.step({
-  "line": 19,
-  "name": "I am on homepage",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 20,
-  "name": "I click on Computer tab",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 21,
-  "name": "I click on Desktops link",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 22,
-  "name": "I click on product name Build your own computer",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 23,
-  "name": "I select processor \"2.5 GHz Intel Pentium Dual-Core E2200 [+$15.00]\"",
-  "matchedColumns": [
-    0
-  ],
-  "keyword": "And "
-});
-formatter.step({
-  "line": 24,
-  "name": "I select ram \"8GB [+$60.00]\"",
-  "matchedColumns": [
-    1
-  ],
-  "keyword": "And "
-});
-formatter.step({
-  "line": 25,
-  "name": "I select hdd \"320 GB\"",
-  "matchedColumns": [
-    2
-  ],
-  "keyword": "And "
-});
-formatter.step({
-  "line": 26,
-  "name": "I select OS \"VistaHome [+$50.00]\"",
-  "matchedColumns": [
-    3
-  ],
-  "keyword": "And "
-});
-formatter.step({
-  "line": 27,
-  "name": "I select Software \"Total Commander [+$5.00]\"",
-  "matchedColumns": [
-    4
-  ],
-  "keyword": "And "
-});
-formatter.step({
-  "line": 28,
-  "name": "I click on add to cart button",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 29,
-  "name": "I should see product has been added to your shopping cart confirmation message",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "LoginStepsTest.iAmOnHomepage()"
-});
-formatter.result({
-  "duration": 26800,
-  "status": "passed"
-});
-formatter.match({
-  "location": "ComputerStepTest.iClickOnComputerTab()"
-});
-formatter.result({
-  "duration": 5327200,
-  "error_message": "java.lang.NullPointerException\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElements(DefaultElementLocator.java:87)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:37)\r\n\tat com.sun.proxy.$Proxy20.iterator(Unknown Source)\r\n\tat com.nopcommerce.demo.pages.HomePage.clickOnMenuTab(HomePage.java:88)\r\n\tat com.nopcommerce.demo.steps.ComputerStepTest.iClickOnComputerTab(ComputerStepTest.java:14)\r\n\tat ✽.When I click on Computer tab(ComputerTest.feature:20)\r\n",
-  "status": "failed"
-});
-formatter.match({
-  "location": "ComputerStepTest.iClickOnDesktopsLink()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "RegisterStepsTest.iClickOnProductNameBuildYourOwnComputer()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "2.5 GHz Intel Pentium Dual-Core E2200 [+$15.00]",
-      "offset": 20
-    }
-  ],
-  "location": "ComputerStepTest.iSelectProcessor(String)"
-});
-formatter.result({
-  "status": "skipped"
 });
 formatter.match({
   "arguments": [
@@ -746,55 +381,65 @@ formatter.match({
   "location": "ComputerStepTest.iSelectRam(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 104544900,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "320 GB",
+      "val": "400 GB [+$100.00]",
       "offset": 14
     }
   ],
   "location": "ComputerStepTest.iSelectHdd(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 109461500,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "VistaHome [+$50.00]",
+      "val": "Vista Premium [+$60.00]",
       "offset": 13
     }
   ],
   "location": "ComputerStepTest.iSelectOS(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 92454000,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "Total Commander [+$5.00]",
+      "val": "Microsoft Office [+$50.00]",
       "offset": 19
     }
   ],
   "location": "ComputerStepTest.iSelectSoftware(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 83057300,
+  "status": "passed"
 });
 formatter.match({
   "location": "ComputerStepTest.iClickOnAddToCartButton()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 73581300,
+  "status": "passed"
 });
 formatter.match({
   "location": "ComputerStepTest.iShouldSeeProductHasBeenAddedToYourShoppingCartConfirmationMessage()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 740350300,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 71300,
+  "status": "passed"
 });
 formatter.uri("LoginTest.feature");
 formatter.feature({
@@ -803,6 +448,10 @@ formatter.feature({
   "description": "As user I want to login into nop commerce website",
   "id": "login-test",
   "keyword": "Feature"
+});
+formatter.before({
+  "duration": 2198042000,
+  "status": "passed"
 });
 formatter.scenario({
   "line": 5,
@@ -841,22 +490,26 @@ formatter.match({
   "location": "LoginStepsTest.iAmOnHomepage()"
 });
 formatter.result({
-  "duration": 32200,
+  "duration": 50600,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginStepsTest.iClickOnLoginLink()"
 });
 formatter.result({
-  "duration": 4169400,
-  "error_message": "java.lang.NullPointerException\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)\r\n\tat com.sun.proxy.$Proxy19.getText(Unknown Source)\r\n\tat com.nopcommerce.demo.pages.HomePage.clickOnLoginLink(HomePage.java:47)\r\n\tat com.nopcommerce.demo.steps.LoginStepsTest.iClickOnLoginLink(LoginStepsTest.java:20)\r\n\tat ✽.When I click on login link(LoginTest.feature:7)\r\n",
-  "status": "failed"
+  "duration": 1027999100,
+  "status": "passed"
 });
 formatter.match({
   "location": "LoginStepsTest.iShouldNavigateToLoginPageSuccessfully()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 56833200,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 34800,
+  "status": "passed"
 });
 formatter.scenarioOutline({
   "line": 11,
@@ -923,33 +576,19 @@ formatter.examples({
     },
     {
       "cells": [
-        "abcd123@gmail.com",
-        "xyz123",
+        "london1@gmail.com",
+        "london1",
         "Login was unsuccessful. Please correct the errors and try again.\nNo customer account found"
       ],
       "line": 20,
       "id": "login-test;verify-the-error-message-with-invalid-credentials;;2"
-    },
-    {
-      "cells": [
-        "xyz123@gmail.com",
-        "abc123",
-        "Login was unsuccessful. Please correct the errors and try again.\nNo customer account found"
-      ],
-      "line": 21,
-      "id": "login-test;verify-the-error-message-with-invalid-credentials;;3"
-    },
-    {
-      "cells": [
-        "adfafasd@gmail.com",
-        "xyz123",
-        "Login was unsuccessful. Please correct the errors and try again.\nNo customer account found"
-      ],
-      "line": 22,
-      "id": "login-test;verify-the-error-message-with-invalid-credentials;;4"
     }
   ],
   "keyword": "Examples"
+});
+formatter.before({
+  "duration": 2908326000,
+  "status": "passed"
 });
 formatter.scenario({
   "line": 20,
@@ -981,7 +620,7 @@ formatter.step({
 });
 formatter.step({
   "line": 14,
-  "name": "I enter email \"abcd123@gmail.com\"",
+  "name": "I enter email \"london1@gmail.com\"",
   "matchedColumns": [
     0
   ],
@@ -989,7 +628,7 @@ formatter.step({
 });
 formatter.step({
   "line": 15,
-  "name": "I enter password \"xyz123\"",
+  "name": "I enter password \"london1\"",
   "matchedColumns": [
     1
   ],
@@ -1012,46 +651,48 @@ formatter.match({
   "location": "LoginStepsTest.iAmOnHomepage()"
 });
 formatter.result({
-  "duration": 36400,
+  "duration": 73200,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginStepsTest.iClickOnLoginLink()"
 });
 formatter.result({
-  "duration": 3478400,
-  "error_message": "java.lang.NullPointerException\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)\r\n\tat com.sun.proxy.$Proxy19.getText(Unknown Source)\r\n\tat com.nopcommerce.demo.pages.HomePage.clickOnLoginLink(HomePage.java:47)\r\n\tat com.nopcommerce.demo.steps.LoginStepsTest.iClickOnLoginLink(LoginStepsTest.java:20)\r\n\tat ✽.When I click on login link(LoginTest.feature:13)\r\n",
-  "status": "failed"
+  "duration": 1076478600,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "abcd123@gmail.com",
+      "val": "london1@gmail.com",
       "offset": 15
     }
   ],
   "location": "LoginStepsTest.iEnterEmail(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 245723300,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "xyz123",
+      "val": "london1",
       "offset": 18
     }
   ],
   "location": "LoginStepsTest.iEnterPassword(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 185141200,
+  "status": "passed"
 });
 formatter.match({
   "location": "LoginStepsTest.iClickOnLoginButton()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 416878900,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -1063,238 +704,19 @@ formatter.match({
   "location": "LoginStepsTest.iShouldSeeTheErrorMessage(String)"
 });
 formatter.result({
-  "status": "skipped"
-});
-formatter.scenario({
-  "line": 21,
-  "name": "Verify the error message with invalid credentials",
-  "description": "",
-  "id": "login-test;verify-the-error-message-with-invalid-credentials;;3",
-  "type": "scenario",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "line": 10,
-      "name": "@regression"
-    },
-    {
-      "line": 10,
-      "name": "@sanity"
-    }
-  ]
-});
-formatter.step({
-  "line": 12,
-  "name": "I am on homepage",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 13,
-  "name": "I click on login link",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 14,
-  "name": "I enter email \"xyz123@gmail.com\"",
-  "matchedColumns": [
-    0
-  ],
-  "keyword": "And "
-});
-formatter.step({
-  "line": 15,
-  "name": "I enter password \"abc123\"",
-  "matchedColumns": [
-    1
-  ],
-  "keyword": "And "
-});
-formatter.step({
-  "line": 16,
-  "name": "I click on login button",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 17,
-  "name": "I should see the error message \"Login was unsuccessful. Please correct the errors and try again.\nNo customer account found\"",
-  "matchedColumns": [
-    2
-  ],
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "LoginStepsTest.iAmOnHomepage()"
-});
-formatter.result({
-  "duration": 29800,
+  "duration": 65702800,
   "status": "passed"
 });
-formatter.match({
-  "location": "LoginStepsTest.iClickOnLoginLink()"
-});
-formatter.result({
-  "duration": 7301900,
-  "error_message": "java.lang.NullPointerException\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)\r\n\tat com.sun.proxy.$Proxy19.getText(Unknown Source)\r\n\tat com.nopcommerce.demo.pages.HomePage.clickOnLoginLink(HomePage.java:47)\r\n\tat com.nopcommerce.demo.steps.LoginStepsTest.iClickOnLoginLink(LoginStepsTest.java:20)\r\n\tat ✽.When I click on login link(LoginTest.feature:13)\r\n",
-  "status": "failed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "xyz123@gmail.com",
-      "offset": 15
-    }
-  ],
-  "location": "LoginStepsTest.iEnterEmail(String)"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "abc123",
-      "offset": 18
-    }
-  ],
-  "location": "LoginStepsTest.iEnterPassword(String)"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "LoginStepsTest.iClickOnLoginButton()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Login was unsuccessful. Please correct the errors and try again.\nNo customer account found",
-      "offset": 32
-    }
-  ],
-  "location": "LoginStepsTest.iShouldSeeTheErrorMessage(String)"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.scenario({
-  "line": 22,
-  "name": "Verify the error message with invalid credentials",
-  "description": "",
-  "id": "login-test;verify-the-error-message-with-invalid-credentials;;4",
-  "type": "scenario",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "line": 10,
-      "name": "@regression"
-    },
-    {
-      "line": 10,
-      "name": "@sanity"
-    }
-  ]
-});
-formatter.step({
-  "line": 12,
-  "name": "I am on homepage",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 13,
-  "name": "I click on login link",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 14,
-  "name": "I enter email \"adfafasd@gmail.com\"",
-  "matchedColumns": [
-    0
-  ],
-  "keyword": "And "
-});
-formatter.step({
-  "line": 15,
-  "name": "I enter password \"xyz123\"",
-  "matchedColumns": [
-    1
-  ],
-  "keyword": "And "
-});
-formatter.step({
-  "line": 16,
-  "name": "I click on login button",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 17,
-  "name": "I should see the error message \"Login was unsuccessful. Please correct the errors and try again.\nNo customer account found\"",
-  "matchedColumns": [
-    2
-  ],
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "LoginStepsTest.iAmOnHomepage()"
-});
-formatter.result({
-  "duration": 57500,
+formatter.after({
+  "duration": 45900,
   "status": "passed"
 });
-formatter.match({
-  "location": "LoginStepsTest.iClickOnLoginLink()"
-});
-formatter.result({
-  "duration": 5794800,
-  "error_message": "java.lang.NullPointerException\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)\r\n\tat com.sun.proxy.$Proxy19.getText(Unknown Source)\r\n\tat com.nopcommerce.demo.pages.HomePage.clickOnLoginLink(HomePage.java:47)\r\n\tat com.nopcommerce.demo.steps.LoginStepsTest.iClickOnLoginLink(LoginStepsTest.java:20)\r\n\tat ✽.When I click on login link(LoginTest.feature:13)\r\n",
-  "status": "failed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "adfafasd@gmail.com",
-      "offset": 15
-    }
-  ],
-  "location": "LoginStepsTest.iEnterEmail(String)"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "xyz123",
-      "offset": 18
-    }
-  ],
-  "location": "LoginStepsTest.iEnterPassword(String)"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "LoginStepsTest.iClickOnLoginButton()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Login was unsuccessful. Please correct the errors and try again.\nNo customer account found",
-      "offset": 32
-    }
-  ],
-  "location": "LoginStepsTest.iShouldSeeTheErrorMessage(String)"
-});
-formatter.result({
-  "status": "skipped"
+formatter.before({
+  "duration": 2402226200,
+  "status": "passed"
 });
 formatter.scenario({
-  "line": 25,
+  "line": 24,
   "name": "User should login successfully with valid credentials",
   "description": "",
   "id": "login-test;user-should-login-successfully-with-valid-credentials",
@@ -1302,42 +724,57 @@ formatter.scenario({
   "keyword": "Scenario",
   "tags": [
     {
-      "line": 24,
+      "line": 23,
       "name": "@sanity"
     },
     {
-      "line": 24,
+      "line": 23,
       "name": "@regression"
     }
   ]
 });
 formatter.step({
-  "line": 26,
+  "line": 25,
   "name": "I am on homepage",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 27,
-  "name": "I click on login link",
+  "line": 26,
+  "name": "I click on register link",
   "keyword": "When "
 });
 formatter.step({
+  "line": 27,
+  "name": "I fill all the mandatory fields",
+  "keyword": "And "
+});
+formatter.step({
   "line": 28,
-  "name": "I enter email \"abc123@gmail.com\"",
+  "name": "I click on register button",
   "keyword": "And "
 });
 formatter.step({
   "line": 29,
-  "name": "I enter password \"Abcd1234\"",
+  "name": "I click on login link",
   "keyword": "And "
 });
 formatter.step({
   "line": 30,
-  "name": "I click on login button",
+  "name": "I enter email \"jhonwick@gmail.com\"",
   "keyword": "And "
 });
 formatter.step({
   "line": 31,
+  "name": "I enter password \"jhonwick\"",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 32,
+  "name": "I click on login button",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 33,
   "name": "I should see logout link is display",
   "keyword": "Then "
 });
@@ -1345,55 +782,87 @@ formatter.match({
   "location": "LoginStepsTest.iAmOnHomepage()"
 });
 formatter.result({
-  "duration": 31400,
+  "duration": 66900,
+  "status": "passed"
+});
+formatter.match({
+  "location": "RegisterStepsTest.iClickOnRegisterLink()"
+});
+formatter.result({
+  "duration": 995017200,
+  "status": "passed"
+});
+formatter.match({
+  "location": "LoginStepsTest.iFillAllTheMandatoryFields()"
+});
+formatter.result({
+  "duration": 1338804900,
+  "status": "passed"
+});
+formatter.match({
+  "location": "RegisterStepsTest.iClickOnRegisterButton()"
+});
+formatter.result({
+  "duration": 670761600,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginStepsTest.iClickOnLoginLink()"
 });
 formatter.result({
-  "duration": 5212000,
-  "error_message": "java.lang.NullPointerException\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)\r\n\tat com.sun.proxy.$Proxy19.getText(Unknown Source)\r\n\tat com.nopcommerce.demo.pages.HomePage.clickOnLoginLink(HomePage.java:47)\r\n\tat com.nopcommerce.demo.steps.LoginStepsTest.iClickOnLoginLink(LoginStepsTest.java:20)\r\n\tat ✽.When I click on login link(LoginTest.feature:27)\r\n",
-  "status": "failed"
+  "duration": 504638200,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "abc123@gmail.com",
+      "val": "jhonwick@gmail.com",
       "offset": 15
     }
   ],
   "location": "LoginStepsTest.iEnterEmail(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 205393100,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "Abcd1234",
+      "val": "jhonwick",
       "offset": 18
     }
   ],
   "location": "LoginStepsTest.iEnterPassword(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 119969100,
+  "status": "passed"
 });
 formatter.match({
   "location": "LoginStepsTest.iClickOnLoginButton()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 600601400,
+  "status": "passed"
 });
 formatter.match({
   "location": "LoginStepsTest.iShouldSeeLogoutLinkIsDisplay()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 56707100,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 29500,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 2594918000,
+  "status": "passed"
 });
 formatter.scenario({
-  "line": 34,
+  "line": 36,
   "name": "User should logout successfully",
   "description": "",
   "id": "login-test;user-should-logout-successfully",
@@ -1401,43 +870,58 @@ formatter.scenario({
   "keyword": "Scenario",
   "tags": [
     {
-      "line": 33,
+      "line": 35,
       "name": "@regression"
     }
   ]
 });
 formatter.step({
-  "line": 35,
+  "line": 37,
   "name": "I am on homepage",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 36,
-  "name": "I click on login link",
+  "line": 38,
+  "name": "I click on register link",
   "keyword": "When "
 });
 formatter.step({
-  "line": 37,
-  "name": "I enter email \"abc123@gmail.com\"",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 38,
-  "name": "I enter password \"Abcd1234\"",
-  "keyword": "And "
-});
-formatter.step({
   "line": 39,
-  "name": "I click on login button",
+  "name": "I fill all the mandatory fields",
   "keyword": "And "
 });
 formatter.step({
   "line": 40,
-  "name": "I click on logout link",
+  "name": "I click on register button",
   "keyword": "And "
 });
 formatter.step({
   "line": 41,
+  "name": "I click on login link",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 42,
+  "name": "I enter email \"jhonwick@gmail.com\"",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 43,
+  "name": "I enter password \"jhonwick\"",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 44,
+  "name": "I click on login button",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 45,
+  "name": "I click on logout link",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 46,
   "name": "I should see login link is display",
   "keyword": "Then "
 });
@@ -1445,58 +929,87 @@ formatter.match({
   "location": "LoginStepsTest.iAmOnHomepage()"
 });
 formatter.result({
-  "duration": 80400,
+  "duration": 42000,
+  "status": "passed"
+});
+formatter.match({
+  "location": "RegisterStepsTest.iClickOnRegisterLink()"
+});
+formatter.result({
+  "duration": 654351600,
+  "status": "passed"
+});
+formatter.match({
+  "location": "LoginStepsTest.iFillAllTheMandatoryFields()"
+});
+formatter.result({
+  "duration": 1238195800,
+  "status": "passed"
+});
+formatter.match({
+  "location": "RegisterStepsTest.iClickOnRegisterButton()"
+});
+formatter.result({
+  "duration": 422494300,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginStepsTest.iClickOnLoginLink()"
 });
 formatter.result({
-  "duration": 10397900,
-  "error_message": "java.lang.NullPointerException\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)\r\n\tat com.sun.proxy.$Proxy19.getText(Unknown Source)\r\n\tat com.nopcommerce.demo.pages.HomePage.clickOnLoginLink(HomePage.java:47)\r\n\tat com.nopcommerce.demo.steps.LoginStepsTest.iClickOnLoginLink(LoginStepsTest.java:20)\r\n\tat ✽.When I click on login link(LoginTest.feature:36)\r\n",
-  "status": "failed"
+  "duration": 457541600,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "abc123@gmail.com",
+      "val": "jhonwick@gmail.com",
       "offset": 15
     }
   ],
   "location": "LoginStepsTest.iEnterEmail(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 212204600,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "Abcd1234",
+      "val": "jhonwick",
       "offset": 18
     }
   ],
   "location": "LoginStepsTest.iEnterPassword(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 158792200,
+  "status": "passed"
 });
 formatter.match({
   "location": "LoginStepsTest.iClickOnLoginButton()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 719224200,
+  "status": "passed"
 });
 formatter.match({
   "location": "LoginStepsTest.iClickOnLogoutLink()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 720129900,
+  "status": "passed"
 });
 formatter.match({
   "location": "LoginStepsTest.iShouldSeeLoginLinkIsDisplay()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 79590200,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 66200,
+  "status": "passed"
 });
 formatter.uri("RegisterTest.feature");
 formatter.feature({
@@ -1505,6 +1018,10 @@ formatter.feature({
   "description": "As user I want to register to nop commerce website",
   "id": "register-test",
   "keyword": "Feature"
+});
+formatter.before({
+  "duration": 2844632500,
+  "status": "passed"
 });
 formatter.scenario({
   "line": 5,
@@ -1543,22 +1060,26 @@ formatter.match({
   "location": "LoginStepsTest.iAmOnHomepage()"
 });
 formatter.result({
-  "duration": 38300,
+  "duration": 57000,
   "status": "passed"
 });
 formatter.match({
   "location": "RegisterStepsTest.iClickOnRegisterLink()"
 });
 formatter.result({
-  "duration": 10435600,
-  "error_message": "java.lang.NullPointerException\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)\r\n\tat com.sun.proxy.$Proxy19.getText(Unknown Source)\r\n\tat com.nopcommerce.demo.pages.HomePage.clickOnRegisterLink(HomePage.java:59)\r\n\tat com.nopcommerce.demo.steps.RegisterStepsTest.iClickOnRegisterLink(RegisterStepsTest.java:18)\r\n\tat ✽.When I click on register link(RegisterTest.feature:7)\r\n",
-  "status": "failed"
+  "duration": 679775300,
+  "status": "passed"
 });
 formatter.match({
   "location": "RegisterStepsTest.iShouldNavigateToRegisterPageSuccessfully()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 73699900,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 80100,
+  "status": "passed"
 });
 formatter.scenarioOutline({
   "line": 11,
@@ -1655,6 +1176,10 @@ formatter.examples({
   ],
   "keyword": "Examples"
 });
+formatter.before({
+  "duration": 3167227800,
+  "status": "passed"
+});
 formatter.scenario({
   "line": 19,
   "name": "verify that firstname lastname email password and confirm password fields are mandatory",
@@ -1701,22 +1226,22 @@ formatter.match({
   "location": "LoginStepsTest.iAmOnHomepage()"
 });
 formatter.result({
-  "duration": 34200,
+  "duration": 44100,
   "status": "passed"
 });
 formatter.match({
   "location": "RegisterStepsTest.iClickOnRegisterLink()"
 });
 formatter.result({
-  "duration": 7842700,
-  "error_message": "java.lang.NullPointerException\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)\r\n\tat com.sun.proxy.$Proxy19.getText(Unknown Source)\r\n\tat com.nopcommerce.demo.pages.HomePage.clickOnRegisterLink(HomePage.java:59)\r\n\tat com.nopcommerce.demo.steps.RegisterStepsTest.iClickOnRegisterLink(RegisterStepsTest.java:18)\r\n\tat ✽.When I click on register link(RegisterTest.feature:13)\r\n",
-  "status": "failed"
+  "duration": 688873400,
+  "status": "passed"
 });
 formatter.match({
   "location": "RegisterStepsTest.iClickOnRegisterButton()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 150275200,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -1732,7 +1257,16 @@ formatter.match({
   "location": "RegisterStepsTest.iShouldSeeTheErrorMessageForFieldName(String,String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 164583800,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 36000,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 3039107500,
+  "status": "passed"
 });
 formatter.scenario({
   "line": 20,
@@ -1780,22 +1314,22 @@ formatter.match({
   "location": "LoginStepsTest.iAmOnHomepage()"
 });
 formatter.result({
-  "duration": 48600,
+  "duration": 55500,
   "status": "passed"
 });
 formatter.match({
   "location": "RegisterStepsTest.iClickOnRegisterLink()"
 });
 formatter.result({
-  "duration": 13993400,
-  "error_message": "java.lang.NullPointerException\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)\r\n\tat com.sun.proxy.$Proxy19.getText(Unknown Source)\r\n\tat com.nopcommerce.demo.pages.HomePage.clickOnRegisterLink(HomePage.java:59)\r\n\tat com.nopcommerce.demo.steps.RegisterStepsTest.iClickOnRegisterLink(RegisterStepsTest.java:18)\r\n\tat ✽.When I click on register link(RegisterTest.feature:13)\r\n",
-  "status": "failed"
+  "duration": 656518600,
+  "status": "passed"
 });
 formatter.match({
   "location": "RegisterStepsTest.iClickOnRegisterButton()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 132791600,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -1811,7 +1345,16 @@ formatter.match({
   "location": "RegisterStepsTest.iShouldSeeTheErrorMessageForFieldName(String,String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 182015300,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 58600,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 3185794200,
+  "status": "passed"
 });
 formatter.scenario({
   "line": 21,
@@ -1859,22 +1402,22 @@ formatter.match({
   "location": "LoginStepsTest.iAmOnHomepage()"
 });
 formatter.result({
-  "duration": 48400,
+  "duration": 51200,
   "status": "passed"
 });
 formatter.match({
   "location": "RegisterStepsTest.iClickOnRegisterLink()"
 });
 formatter.result({
-  "duration": 5658600,
-  "error_message": "java.lang.NullPointerException\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)\r\n\tat com.sun.proxy.$Proxy19.getText(Unknown Source)\r\n\tat com.nopcommerce.demo.pages.HomePage.clickOnRegisterLink(HomePage.java:59)\r\n\tat com.nopcommerce.demo.steps.RegisterStepsTest.iClickOnRegisterLink(RegisterStepsTest.java:18)\r\n\tat ✽.When I click on register link(RegisterTest.feature:13)\r\n",
-  "status": "failed"
+  "duration": 708325600,
+  "status": "passed"
 });
 formatter.match({
   "location": "RegisterStepsTest.iClickOnRegisterButton()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 144367200,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -1890,7 +1433,16 @@ formatter.match({
   "location": "RegisterStepsTest.iShouldSeeTheErrorMessageForFieldName(String,String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 204402300,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 57800,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 3008526100,
+  "status": "passed"
 });
 formatter.scenario({
   "line": 22,
@@ -1938,22 +1490,22 @@ formatter.match({
   "location": "LoginStepsTest.iAmOnHomepage()"
 });
 formatter.result({
-  "duration": 612100,
+  "duration": 48800,
   "status": "passed"
 });
 formatter.match({
   "location": "RegisterStepsTest.iClickOnRegisterLink()"
 });
 formatter.result({
-  "duration": 9659700,
-  "error_message": "java.lang.NullPointerException\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)\r\n\tat com.sun.proxy.$Proxy19.getText(Unknown Source)\r\n\tat com.nopcommerce.demo.pages.HomePage.clickOnRegisterLink(HomePage.java:59)\r\n\tat com.nopcommerce.demo.steps.RegisterStepsTest.iClickOnRegisterLink(RegisterStepsTest.java:18)\r\n\tat ✽.When I click on register link(RegisterTest.feature:13)\r\n",
-  "status": "failed"
+  "duration": 720954400,
+  "status": "passed"
 });
 formatter.match({
   "location": "RegisterStepsTest.iClickOnRegisterButton()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 159107600,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -1969,7 +1521,16 @@ formatter.match({
   "location": "RegisterStepsTest.iShouldSeeTheErrorMessageForFieldName(String,String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 210538800,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 50000,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 3357364600,
+  "status": "passed"
 });
 formatter.scenario({
   "line": 23,
@@ -2017,22 +1578,22 @@ formatter.match({
   "location": "LoginStepsTest.iAmOnHomepage()"
 });
 formatter.result({
-  "duration": 289900,
+  "duration": 127100,
   "status": "passed"
 });
 formatter.match({
   "location": "RegisterStepsTest.iClickOnRegisterLink()"
 });
 formatter.result({
-  "duration": 5561500,
-  "error_message": "java.lang.NullPointerException\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)\r\n\tat com.sun.proxy.$Proxy19.getText(Unknown Source)\r\n\tat com.nopcommerce.demo.pages.HomePage.clickOnRegisterLink(HomePage.java:59)\r\n\tat com.nopcommerce.demo.steps.RegisterStepsTest.iClickOnRegisterLink(RegisterStepsTest.java:18)\r\n\tat ✽.When I click on register link(RegisterTest.feature:13)\r\n",
-  "status": "failed"
+  "duration": 653915000,
+  "status": "passed"
 });
 formatter.match({
   "location": "RegisterStepsTest.iClickOnRegisterButton()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 153607100,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -2048,7 +1609,12 @@ formatter.match({
   "location": "RegisterStepsTest.iShouldSeeTheErrorMessageForFieldName(String,String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 240662200,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 49000,
+  "status": "passed"
 });
 formatter.scenarioOutline({
   "line": 26,
@@ -2096,31 +1662,37 @@ formatter.step({
 });
 formatter.step({
   "line": 33,
-  "name": "I enter random email \"\u003cemail\u003e\"",
+  "name": "I enter email \"jhonwick@gmail.com\"",
   "keyword": "And "
 });
 formatter.step({
-  "line": 34,
+  "comments": [
+    {
+      "line": 34,
+      "value": "# And I enter random email \"london1@gmail.com\""
+    }
+  ],
+  "line": 35,
   "name": "I enter password \"\u003cpassword\u003e\"",
   "keyword": "And "
 });
 formatter.step({
-  "line": 35,
+  "line": 36,
   "name": "I enter confirm password \"\u003cconfirmPassword\u003e\"",
   "keyword": "And "
 });
 formatter.step({
-  "line": 36,
+  "line": 37,
   "name": "I click on register button",
   "keyword": "And "
 });
 formatter.step({
-  "line": 37,
+  "line": 38,
   "name": "I should see registration confirmation message",
   "keyword": "Then "
 });
 formatter.examples({
-  "line": 39,
+  "line": 40,
   "name": "",
   "description": "",
   "id": "register-test;verify-that-user-should-create-account-successfully;",
@@ -2136,28 +1708,32 @@ formatter.examples({
         "password",
         "confirmPassword"
       ],
-      "line": 40,
+      "line": 41,
       "id": "register-test;verify-that-user-should-create-account-successfully;;1"
     },
     {
       "cells": [
-        "Female",
-        "blue",
-        "ocean",
-        "22",
-        "February",
-        "1980",
-        "Abcd1234",
-        "Abcd1234"
+        "Male",
+        "Jhon",
+        "Wick",
+        "19",
+        "December",
+        "2000",
+        "Password123",
+        "Password123"
       ],
-      "line": 41,
+      "line": 42,
       "id": "register-test;verify-that-user-should-create-account-successfully;;2"
     }
   ],
   "keyword": "Examples"
 });
+formatter.before({
+  "duration": 2817734900,
+  "status": "passed"
+});
 formatter.scenario({
-  "line": 41,
+  "line": 42,
   "name": "verify that user should create account successfully",
   "description": "",
   "id": "register-test;verify-that-user-should-create-account-successfully;;2",
@@ -2182,7 +1758,7 @@ formatter.step({
 });
 formatter.step({
   "line": 29,
-  "name": "I select gender\"Female\"",
+  "name": "I select gender\"Male\"",
   "matchedColumns": [
     0
   ],
@@ -2190,7 +1766,7 @@ formatter.step({
 });
 formatter.step({
   "line": 30,
-  "name": "I enter firstname \"blue\"",
+  "name": "I enter firstname \"Jhon\"",
   "matchedColumns": [
     1
   ],
@@ -2198,7 +1774,7 @@ formatter.step({
 });
 formatter.step({
   "line": 31,
-  "name": "I enter lastname \"ocean\"",
+  "name": "I enter lastname \"Wick\"",
   "matchedColumns": [
     2
   ],
@@ -2206,7 +1782,7 @@ formatter.step({
 });
 formatter.step({
   "line": 32,
-  "name": "I select date of birth  \"22\"\"February\"\"1980\"",
+  "name": "I select date of birth  \"19\"\"December\"\"2000\"",
   "matchedColumns": [
     3,
     4,
@@ -2216,32 +1792,38 @@ formatter.step({
 });
 formatter.step({
   "line": 33,
-  "name": "I enter random email \"\u003cemail\u003e\"",
+  "name": "I enter email \"jhonwick@gmail.com\"",
   "keyword": "And "
 });
 formatter.step({
-  "line": 34,
-  "name": "I enter password \"Abcd1234\"",
+  "comments": [
+    {
+      "line": 34,
+      "value": "# And I enter random email \"london1@gmail.com\""
+    }
+  ],
+  "line": 35,
+  "name": "I enter password \"Password123\"",
   "matchedColumns": [
     6
   ],
   "keyword": "And "
 });
 formatter.step({
-  "line": 35,
-  "name": "I enter confirm password \"Abcd1234\"",
+  "line": 36,
+  "name": "I enter confirm password \"Password123\"",
   "matchedColumns": [
     7
   ],
   "keyword": "And "
 });
 formatter.step({
-  "line": 36,
+  "line": 37,
   "name": "I click on register button",
   "keyword": "And "
 });
 formatter.step({
-  "line": 37,
+  "line": 38,
   "name": "I should see registration confirmation message",
   "keyword": "Then "
 });
@@ -2249,119 +1831,132 @@ formatter.match({
   "location": "LoginStepsTest.iAmOnHomepage()"
 });
 formatter.result({
-  "duration": 17600,
+  "duration": 45000,
   "status": "passed"
 });
 formatter.match({
   "location": "RegisterStepsTest.iClickOnRegisterLink()"
 });
 formatter.result({
-  "duration": 4906600,
-  "error_message": "java.lang.NullPointerException\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)\r\n\tat com.sun.proxy.$Proxy19.getText(Unknown Source)\r\n\tat com.nopcommerce.demo.pages.HomePage.clickOnRegisterLink(HomePage.java:59)\r\n\tat com.nopcommerce.demo.steps.RegisterStepsTest.iClickOnRegisterLink(RegisterStepsTest.java:18)\r\n\tat ✽.When I click on register link(RegisterTest.feature:28)\r\n",
-  "status": "failed"
+  "duration": 1121663000,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "Female",
+      "val": "Male",
       "offset": 16
     }
   ],
   "location": "RegisterStepsTest.iSelectGender(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 161883100,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "blue",
+      "val": "Jhon",
       "offset": 19
     }
   ],
   "location": "RegisterStepsTest.iEnterFirstname(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 191702400,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "ocean",
+      "val": "Wick",
       "offset": 18
     }
   ],
   "location": "RegisterStepsTest.iEnterLastname(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 150760400,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "22",
+      "val": "19",
       "offset": 25
     },
     {
-      "val": "February",
+      "val": "December",
       "offset": 29
     },
     {
-      "val": "1980",
+      "val": "2000",
       "offset": 39
     }
   ],
   "location": "RegisterStepsTest.iSelectDateOfBirth(String,String,String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 403558300,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "\u003cemail\u003e",
-      "offset": 22
+      "val": "jhonwick@gmail.com",
+      "offset": 15
     }
   ],
-  "location": "RegisterStepsTest.iEnterRandomEmail(String)"
+  "location": "LoginStepsTest.iEnterEmail(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 213310800,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "Abcd1234",
+      "val": "Password123",
       "offset": 18
     }
   ],
   "location": "LoginStepsTest.iEnterPassword(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 174577600,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "Abcd1234",
+      "val": "Password123",
       "offset": 26
     }
   ],
   "location": "RegisterStepsTest.iEnterConfirmPassword(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 203924100,
+  "status": "passed"
 });
 formatter.match({
   "location": "RegisterStepsTest.iClickOnRegisterButton()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 582713100,
+  "status": "passed"
 });
 formatter.match({
   "location": "RegisterStepsTest.iShouldSeeRegistrationConfirmationMessage()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 20089654100,
+  "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".result\"}\n  (Session info: chrome\u003d108.0.5359.125)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: \u00274.0.0\u0027, revision: \u00273a21814679\u0027\nSystem info: host: \u0027HIREN\u0027, ip: \u0027192.168.0.59\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_121\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [9dc3b3cd0f36857d5bcbf5555c8d7c6d, findElement {using\u003dcss selector, value\u003d.result}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\shiva\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55518}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55518/devtoo..., se:cdpVersion: 108.0.5359.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 9dc3b3cd0f36857d5bcbf5555c8d7c6d\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)\r\n\tat org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)\r\n\tat org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)\r\n\tat com.sun.proxy.$Proxy23.getText(Unknown Source)\r\n\tat com.nopcommerce.demo.utility.Utility.getTextFromElement(Utility.java:61)\r\n\tat com.nopcommerce.demo.pages.RegisterPage.getYourRegCompletedText(RegisterPage.java:144)\r\n\tat com.nopcommerce.demo.steps.RegisterStepsTest.iShouldSeeRegistrationConfirmationMessage(RegisterStepsTest.java:73)\r\n\tat ✽.Then I should see registration confirmation message(RegisterTest.feature:38)\r\n",
+  "status": "failed"
+});
+formatter.after({
+  "duration": 272246200,
+  "status": "passed"
 });
 });

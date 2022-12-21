@@ -3,6 +3,7 @@ package com.nopcommerce.demo.steps;
 import com.nopcommerce.demo.pages.DesktopsPage;
 import com.nopcommerce.demo.pages.HomePage;
 import com.nopcommerce.demo.pages.RegisterPage;
+import cucumber.api.PendingException;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -55,9 +56,9 @@ public class RegisterStepsTest {
         new RegisterPage().selectDateOfBirth(day, month, year);
     }
 
-    public static String email = getRandomString(5) + "@gmail.com";
+    public static String email = getRandomString(2) + "@gmail.com";
     @And("^I enter random email \"([^\"]*)\"$")
-    public void iEnterRandomEmail(String arg0) {
+    public void iEnterRandomEmail(String email) {
         new RegisterPage().enterEmail(email);
     }
 
@@ -76,5 +77,6 @@ public class RegisterStepsTest {
     public void iClickOnProductNameBuildYourOwnComputer() {
         new DesktopsPage().selectProduct("Build your own computer");
     }
+
 
 }

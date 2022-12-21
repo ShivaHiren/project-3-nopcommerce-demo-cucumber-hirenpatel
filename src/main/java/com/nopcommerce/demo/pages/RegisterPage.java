@@ -109,8 +109,8 @@ public class RegisterPage extends Utility {
     }
 
     public void enterEmail(String email) {
-        sendTextToElement(emailField, email);
-        log.info("Enter Email : '" + email + "' to email field" + "<br>");
+        sendTextToElement(emailField,email );
+        log.info("Enter email Id : " + emailField.toString());
     }
 
     public void enterPassword(String password) {

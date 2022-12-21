@@ -30,7 +30,8 @@ Feature: Register Test
     And I enter firstname "<firstName>"
     And I enter lastname "<lastName>"
     And I select date of birth  "<day>""<month>""<year>"
-    And I enter random email "<email>"
+    And I enter email "jhonwick@gmail.com"
+   # And I enter random email "london1@gmail.com"
     And I enter password "<password>"
     And I enter confirm password "<confirmPassword>"
     And I click on register button
@@ -38,5 +39,5 @@ Feature: Register Test
 
     Examples:
       | gender | firstName | lastName | day | month    | year | password | confirmPassword |
-      | Female | blue      | ocean    | 22  | February | 1980 | Abcd1234 | Abcd1234        |
+      | Male   | Jhon      | Wick     | 19  | December | 2000 | Password123 | Password123  |
 

@@ -2,6 +2,7 @@ package com.nopcommerce.demo.steps;
 
 import com.nopcommerce.demo.pages.HomePage;
 import com.nopcommerce.demo.pages.LoginPage;
+import com.nopcommerce.demo.pages.RegisterPage;
 import cucumber.api.PendingException;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
@@ -27,10 +28,10 @@ public class LoginStepsTest {
         Assert.assertEquals("Login page not displayed", expectedMessage, actualMessage);
     }
 
-    @And("^I enter email \"([^\"]*)\"$")
-    public void iEnterEmail(String email){
-        new LoginPage().enterEmailId(email);
-    }
+//    @And("^I enter email \"([^\"]*)\"$")
+//    public void iEnterEmail(String email){
+//        new RegisterPage().enterEmail(email);
+//    }
 
     @And("^I enter password \"([^\"]*)\"$")
     public void iEnterPassword(String password){
@@ -60,5 +61,24 @@ public class LoginStepsTest {
     @Then("^I should see login link is display$")
     public void iShouldSeeLoginLinkIsDisplay() {
         Assert.assertEquals("Log in link is not displayed", true, new HomePage().isLogInLinkDisplay());
+    }
+
+
+    @And("^I enter email \"([^\"]*)\"$")
+    public void iEnterEmail(String email)  {
+        new RegisterPage().enterEmail(email);
+
+    }
+
+    @And("^I fill all the mandatory fields$")
+    public void iFillAllTheMandatoryFields() {
+        new RegisterPage().selectGender("Male");
+        new RegisterPage().enterFirstName("Jhon");
+        new RegisterPage().enterLastName("Wick");
+        new RegisterPage().selectDateOfBirth("1", "December", "2000");
+        new RegisterPage().enterEmail("jhonwick@gmail.com");
+        new LoginPage().enterPassword("jhonwick");
+        new RegisterPage().enterConfirmPassword("jhonwick");
+
     }
 }
